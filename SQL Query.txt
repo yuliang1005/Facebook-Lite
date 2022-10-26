@@ -1,0 +1,18 @@
+select * from member where email=? and password=?
+
+insert into member(email,password,fullName,screenName,dateOfBirth,gender,status,location,visibility)
+values(?,?,?,?,?,?,?,?,?)
+
+select * from member where email=?
+
+insert into likes(email,postID) values(?,?)
+
+select * from friendsWith where memberOneEmail=? or memberTwoEmail=?
+
+select * from friendsRequest where memberRecepientEmail=? and requestStatus=?
+
+insert into friendsRequest(memberRequesterEmail,memberRecepientEmail,requestDate,requestStatus) values(?,?,?,?)
+
+update member set screenName=?,status=?,location=?,visibility=? where email=?
+
+delete from member where email=?

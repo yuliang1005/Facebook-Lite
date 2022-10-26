@@ -1,0 +1,424 @@
+body{
+	background-color: rgba(198, 218, 241, 0.89);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .header{
+	background-color: rgba(75, 146, 226, 0.89);
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	font-size: 155%;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	animation-name: header-animation;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-out;
+  }
+  @keyframes header-animation {
+	0% {width:0;}
+	100% {width: 100%;} 
+  }
+  .slogan{
+	animation-name: slogan-animation;
+	animation-duration: 0.5s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-out;
+	opacity:0;
+	animation-fill-mode: forwards;
+	position:relative;
+	top: 28%;
+  }
+  @keyframes slogan-animation {
+	0% { opacity: 0;}
+	100% {opacity: 1;} 
+  }
+  ul{
+	list-style-type: none;
+	margin: 0;
+	background-color: rgb(70, 63, 63);
+	height: 48px;
+  }
+  nav{
+	animation-name: nav-animation;
+	animation-duration: 0.75s;
+	animation-timing-function: ease-out;
+  }
+  @keyframes nav-animation {
+	0% {width:0;}
+	100% {width: 100%;}
+  }
+  li{
+	display: inline;
+	float: left;
+  }
+  li a{
+	padding:13px;
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	animation-name: navbar-animation;
+	animation-duration: 0.75s;
+	animation-delay: 0.75s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	transition: background-color 0.5s;
+  }
+  @keyframes navbar-animation {
+	0% { opacity:0;}
+	100% {opacity:1;} 
+  }
+  li a:hover {
+	background-color: black;
+  }
+  .logout-nav{
+	  float: right;
+  }
+  .login-nav{
+	float: right;
+}
+  .content{
+	text-align: center;
+	animation-name: content-animation;
+	animation-duration: 0.75s;
+	animation-delay: 0.75s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	opacity: 0;
+  }
+  @keyframes content-animation {
+	0% {opacity: 0;  margin-top: 50px;}
+	70% {opacity: 1; margin-top: 0px;} 
+	100% {opacity: 1; margin-top: 15px;} 
+  }
+  .search-box{
+	  background-color: rgba(117, 153, 196, 0.89);
+	  width: 40%;
+	  margin-left: 30%;
+	  text-align: center;
+	  border-radius: 7px;
+	  font-size: 30px;
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	  color: white;
+	  transition: background-color 0.5s;
+	  padding: 20px;
+  }
+  .search-box:hover{
+	background-color: rgba(84, 120, 163, 0.89);
+  }
+  #plus{
+	  float: right;
+	  border-radius: 60px;
+	  transition: background-color 0.5s;
+	  width:40px;
+	  height: 40px;
+	  color: rgb(141, 209, 186);
+	  background-color: rgba(117, 153, 196, 0.89);
+	  border: none;
+	  font-size: 30px;
+	  text-shadow: 1.5px 1.5px rgb(108, 156, 140);
+  }
+  #plus:hover{
+	background-color: rgba(48, 68, 92, 0.89);
+  }
+  .user-form{
+	border-radius: 7px;
+	text-align: center;
+	background-color: rgba(130, 160, 202, 0.89);
+	width: 50%;
+	margin-left: 25%;
+	box-shadow: 4px 4px 14px rgba(52, 56, 66, 0.5);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	animation-name: login-animation;
+	animation-duration: 0.75s;
+	animation-delay: 0.75s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	opacity: 0;
+	transition: box-shadow 0.5s;
+  }
+  #login-form{
+	transform: translateY(25%);
+  }
+  #register-form{
+	transform: translateY(5%);
+	margin-bottom: 5%;
+  }
+  @keyframes login-animation {
+	0% {opacity: 0;  margin-top: 50px;}
+	70% {opacity: 1; margin-top: 0px;} 
+	100% {opacity: 1; margin-top: 15px;} 
+  }
+  .user-form:hover{
+	box-shadow: 7px 7px 17px rgba(15, 16, 19, 0.5);
+}
+  .user-form h1{
+	color: white;
+	margin-top: 5%;
+  }
+  .login-box label{
+	margin-left: -14%;
+	color: white;
+  }
+  .user-input{
+	padding: 10px;
+	width: 28%;
+	border-radius: 7px;
+	border-color: rgba(75, 146, 226, 0.89);
+	box-shadow: 3px 4px rgba(56, 102, 153, 0.89);
+	transition: box-shadow 0.5s;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .user-input:hover{
+	box-shadow: 5px 6px rgba(42, 71, 104, 0.89);
+  }
+  .user-input:focus{
+	outline: none;
+  }
+  .user-button{
+	width: 15%;
+	height: 35px;
+	border-radius: 7px;
+	background-color: rgb(141, 209, 186);
+	color: white;
+	box-shadow: 3px 4px rgb(92, 136, 121);
+	border: none;
+	margin-bottom: 6%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	transform: translateY(-6px);
+	transition: box-shadow 0.5s,transform 0.5s, background-color 0.5s;
+  }
+  .user-button:hover{
+	box-shadow: 7px 9px rgb(78, 105, 96);
+	-webkit-transform:translateY(-9px);
+	transform: translateY(-9px);
+	background-color: rgb(100, 145, 130);
+  }
+  #login-error{
+	  color: red;
+  }
+  #sign-up a{
+	  text-decoration: none;
+	  color:white;
+  }
+  #share1{
+	height: 40%;
+	width: 20%;
+	margin-top: 15%;
+	opacity: 1;
+	animation-name: share-image-1-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+  }
+  @keyframes share-image-1-animation{
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+  }
+  #share2{
+	position: relative;
+	height: 40%;
+	width: 20%;
+	opacity: 0;
+	margin-left: -20%;
+	animation-name: share-image-2-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+  }
+  @keyframes share-image-2-animation{
+	50%{opacity: 1;}
+	100%{opacity: 0;}
+  }
+  .home-slogan{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 250%;
+	transform: translateY(-200%);
+  }
+  #arrow img{
+	height: 10%;
+	width: 10%;
+	transform: translate(200%, -75%);
+  }
+  #request-list{
+	  margin-left: 75%;
+	  position: absolute;
+	  height: 400px;
+	  width: 20%;
+	  font-size: 10px;
+	  background-color: rgb(231, 225, 140);
+	  box-shadow: 4px 4px 14px rgba(52, 56, 66, 0.5);
+	  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  #request-label{
+	  transition: background-color 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s;
+	  color: rgb(134, 174, 209);
+	  padding: 10px;
+  }
+  #request-label:hover{
+	background-color: rgb(207, 203, 144);
+	color: white;
+	transform: translateY(-4px);
+	box-shadow: 1px 1px 2px rgb(88, 87, 75); ;
+  }
+  .request-process{
+	float: right;
+	border-radius: 60px;
+	transition: background-color 0.5s;
+	width:20px;
+	height: 20px;
+	background-color: rgb(231, 225, 140);
+	border: none;
+	font-size: 10px;
+	text-shadow: 1.5px 1.5px rgb(108, 156, 140);
+  }
+  .request-process:hover{
+	  background-color: rgb(104, 102, 77);
+  }
+  #request-plus{
+	color: rgb(141, 209, 186);
+	transition: color 0.5s, background-color 0.5s;
+  }
+  #request-plus:hover{
+	  background-color: rgb(141, 209, 186);
+	  color: white;
+  }
+  #request-x{
+	color: rgb(223, 69, 69);
+	transition: color 0.5s, background-color 0.5s;
+  }
+  #request-x:hover{
+	background-color: rgb(223, 69, 69);
+	color: white;
+  }
+  .friend-box{
+	background-color: rgba(180, 192, 72, 0.89);
+	width: 65%;
+	margin-left: 5%;
+	border-radius: 7px;
+	font-size: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	box-shadow: 4px 4px 14px rgba(52, 56, 66, 0.5);
+	padding: 15px;
+	margin-bottom: 5px;
+}
+.friend-box:hover{
+	background-color: rgba(128, 134, 66, 0.89);
+  }
+#post-form{
+	display: none;
+	border-radius: 7px;
+	text-align: center;
+	background-color: rgba(130, 160, 202, 0.89);
+	width: 50%;
+	margin-left: 25%;
+	box-shadow: 4px 4px 14px rgba(52, 56, 66, 0.5);
+	animation-name: login-animation;
+	animation-duration: 0.75s;
+	animation-delay: 0.75s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+	opacity: 0;
+	transition: box-shadow 0.5s;
+}
+.friend-name{
+	float: left;
+}
+.friend-status{
+	float: right;
+
+}
+#post-form:hover{
+	box-shadow: 7px 7px 17px rgba(15, 16, 19, 0.5);
+}
+#post-content{
+	padding: 10px;
+	width: 80%;
+	height: 20%;
+	border-radius: 7px;
+	border-color: rgba(75, 146, 226, 0.89);
+	box-shadow: 3px 4px rgba(56, 102, 153, 0.89);
+	transition: box-shadow 0.5s;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	resize:none;
+  }
+#post-content:hover{
+	box-shadow: 5px 6px rgba(42, 71, 104, 0.89);
+  }
+#post-content:focus{
+	outline: none;
+  }
+#add-post-button{
+	float: right;
+}
+.post-box{
+	background-color: rgba(117, 153, 196, 0.89);
+	width: 65%;
+	margin-left: 5%;
+	border-radius: 7px;
+	font-size: 30px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	transition: background-color 0.5s;
+	box-shadow: 4px 4px 14px rgba(52, 56, 66, 0.5);
+	padding: 15px;
+	margin-bottom: 10px;
+}
+.post-label{
+	margin-left: -80%;
+	font-size: 40px;
+}
+.post-timestamp{
+	margin-left: -75%;
+	font-size: 15%;
+	
+}
+.post-details{
+	background-color: rgba(147, 183, 224, 0.89);
+	width: 100%;
+	font-size: 25px;
+	border-radius: 7px;
+}
+#profile-table{
+	background-color: rgb(141, 209, 186);
+	border-radius: 7px;
+	height: 300px;
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 5%;
+	margin-bottom: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: center;
+	color: white;
+	box-shadow: 4px 4px 14px rgb(83, 119, 107);
+	transition: box-shadow 0.75s;
+  }
+  #profile-table:hover{
+	box-shadow: 7px 7px 17px rgb(64, 90, 81);
+  }
+  #profile-table h1{
+	transform: translateX(100px);
+	margin-bottom: -13px;
+  }
+  .profile-button{
+	width: 15%;
+	height: 35px;
+	border-radius: 7px;
+	background-color: rgba(209, 224, 75, 0.89);
+	color: white;
+	box-shadow: 3px 4px rgba(101, 105, 60, 0.89);
+	border: none;
+	margin-bottom: 6%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	transform: translateY(-6px);
+	transition: box-shadow 0.5s,transform 0.5s, background-color 0.5s;
+  }
+  .profile-button:hover{
+	box-shadow: 7px 9px rgba(63, 65, 42, 0.89);
+	-webkit-transform:translateY(-9px);
+	transform: translateY(-9px);
+	background-color: rgba(128, 134, 66, 0.89);
+  }
